@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>BTMN - Basic Academic Task Manager and Notifier</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet" />
+
+  <style>
+    :root {
+      --bg-color: #0d0d0d;
+      --text-color: #e0e0e0;
+      --nav-color: #1a1a1a;
+      --tab-highlight: #ffcc00;
+      --button-bg: #ffcc00;
+      --button-text: #0d0d0d;
+      --button-hover: #ffaa00;
+      --border-color: #333;
+    }
+
+    body.light {
+      --bg-color: #f7f7f7;
+      --text-color: #121212;
+      --nav-color: #ffffff;
+      --tab-highlight: #ffcc00;
+      --button-bg: #121212;
+      --button-text: #ffffff;
+      --button-hover: #333333;
+      --border-color: #cccccc;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      margin: 0;
+      padding: 0;
+      transition: background-color 0.4s, color 0.4s;
+    }
+
+    nav {
+      background-color: var(--nav-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+    }
+
+    .logo {
+      font-size: 22px;
+      font-weight: bold;
+      color: #ffcc00;
+      display: flex;
+      align-items: center;
+    }
+
+    .logo span {
+      margin-left: 8px;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 20px;
+      align-items: center;
+    }
+
+    .nav-links a {
+      color: var(--text-color);
+      text-decoration: none;
+      font-size: 18px;
+      padding: 10px 15px;
+      transition: background-color 0.3s;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      background-color: var(--tab-highlight);
+      color: #000;
+      border-radius: 6px;
+    }
+
+    .toggle-container {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .toggle-label {
+      font-size: 14px;
+      color: var(--text-color);
+    }
+
+    .toggle-theme {
+      background: none;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      color: var(--text-color);
+      transition: color 0.3s;
+    }
+
+    .toggle-theme:hover {
+      color: var(--tab-highlight);
+    }
+
+    .container {
+      padding: 40px 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: auto;
+    }
+
+    .description, .features, .team {
+      text-align: justify;
+      margin-top: 20px;
+      line-height: 1.6;
+    }
+
+    .team-member {
+      margin-bottom: 20px;
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 10px;
+    }
+
+    a.download-button {
+      display: inline-block;
+      padding: 15px 25px;
+      font-size: 18px;
+      margin-top: 30px;
+      color: var(--button-text);
+      background-color: var(--button-bg);
+      border: none;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background-color 0.3s ease, transform 0.2s ease;
+    }
+
+    a.download-button:hover {
+      background-color: var(--button-hover);
+      transform: scale(1.05);
+    }
+
+    .tab-content {
+      display: none;
+    }
+
+    .tab-content.active {
+      display: block;
+    }
+  </style>
+</head>
+<body>
+
+  <nav>
+    <div class="logo">
+      BTMN <span>🦇</span>
+    </div>
+    <div class="nav-links">
+      <a href="#" class="tab-link active" onclick="showTab('home')">Home</a>
+      <a href="#" class="tab-link" onclick="showTab('features')">Features</a>
+      <a href="#" class="tab-link" onclick="showTab('team')">Behind BTMN</a>
+      <div class="toggle-container">
+        <span class="toggle-label" id="modeLabel">Dark</span>
+        <button class="toggle-theme" onclick="toggleTheme()" title="Toggle Light/Dark Mode">🌓</button>
+      </div>
+    </div>
+  </nav>
+
+  <div class="container">
+
+    <!-- Home Tab -->
+    <div id="home" class="tab-content active">
+      <h1>Download BTMN</h1>
+      <p><em>Basic Task Manager and Notifier</em></p>
+
+      <div class="description">
+        <p><strong>BTMN</strong> is a lightweight and user-friendly application designed to help students organize their academic tasks efficiently. Whether it's tracking deadlines, setting reminders, or managing schoolwork, BTMN simplifies your academic life with smart and intuitive features.</p>
+        <p>Say goodbye to missed assignments and hello to productivity.</p>
+      </div>
+
+      <!-- ✅ Updated Download Button -->
+      <a href="https://drive.google.com/file/d/1dod_ko-SexrfyVb96cpNwoGlRdaEEjly/view?usp=sharing" target="_blank" class="download-button">Download ZIP</a>
+    </div>
+
+    <!-- Features Tab -->
+    <div id="features" class="tab-content">
+      <h1>App Features</h1>
+      <div class="features">
+        <ul>
+          <li>📌 <strong>Task Scheduling</strong> – Easily add and organize upcoming assignments, projects, or exams.</li>
+          <li>⏰ <strong>Smart Notifications</strong> – Get notified before deadlines so you never miss important tasks.</li>
+          <li>📋 <strong>Priority Tags</strong> – Mark tasks as high, medium, or low priority to manage your focus.</li>
+          <li>🗓️ <strong>Daily Planner View</strong> – See your daily academic workload in a simple, visual layout.</li>
+          <li>✅ <strong>Task Completion Tracker</strong> – Track your progress and celebrate completed goals.</li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Behind BTMN Tab -->
+    <div id="team" class="tab-content">
+      <h1>Behind BTMN</h1>
+      <div class="team">
+        <div class="team-member">
+          <p><strong>Alvarez, John Daniel G.</strong><br />1st Year Student in Polytechnic University of the Philippines Santa Rosa Campus</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Bantillo, J-Rico L.</strong><br />1st Year Student in Polytechnic University of the Philippines Santa Rosa Campus</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Elliorante, Nicholas K.</strong><br />1st Year Student in Polytechnic University of the Philippines Santa Rosa Campus</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Gabriel, Lloyd Vincent B.</strong><br />1st Year Student in Polytechnic University of the Philippines Santa Rosa Campus</p>
+        </div>
+        <div class="team-member">
+          <p><strong>Lustiva, Gian Mark Clarence I.</strong><br />1st Year Student in Polytechnic University of the Philippines Santa Rosa Campus</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+
+  <!-- Footer -->
+  <footer style="text-align: center; padding: 20px; font-size: 14px; color: gray;">
+    BTMN v1.0 | Contact us at <a href="mailto:btmn.devteam@gmail.com" style="color: #ffcc00; text-decoration: none;">btmn.devteam@gmail.com</a>
+  </footer>
+
+  <script>
+    function showTab(tabId) {
+      const tabs = document.querySelectorAll('.tab-content');
+      const links = document.querySelectorAll('.tab-link');
+
+      tabs.forEach(tab => tab.classList.remove('active'));
+      links.forEach(link => link.classList.remove('active'));
+
+      document.getElementById(tabId).classList.add('active');
+      event.target.classList.add('active');
+    }
+
+    function toggleTheme() {
+      const body = document.body;
+      const label = document.getElementById("modeLabel");
+      body.classList.toggle("light");
+      label.textContent = body.classList.contains("light") ? "Light" : "Dark";
+    }
+  </script>
+
+</body>
+</html>
