@@ -1,16 +1,17 @@
-## Hi there 👋
+# FoopZern
 
-<!--
-**foopzern/foopzern** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+I'm a **2nd Year Information Technology Student** aspiring to be a **Game Developer** im a guy who just loves to code and make fun stuff that I enjoy during my free time. I am currently focused on mastering Data Structures, Network Topology, and Human Interaction. 
 
-Here are some ideas to get you started:
+## 👷 Check out my works~~
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+* **foopzern/student-info-system** -
+  
+## 🌱 My latest projects~~
+
+## 🔭 Latest releases I've contributed to~~
+
+## ⭐ Recent Stars~~
+
+## Coding Language Profficiency --
+
+
