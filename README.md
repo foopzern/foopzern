@@ -8,12 +8,14 @@ I'm a **2nd Year Information Technology Student** aspiring to be a **Game Develo
   
 ## My latest projects~~
 
+**network administration system** - a system that has a dashboard and real time security against malicious attacks
+
 ## Latest releases I've contributed to~~
 
 ## Recent Stars~~
 
 ## Coding Language Profficiency --
-**Python**, **CPP/C++**, **Java**, **C#**
-Currently learning: **Java**, **HTML,CSS**
+**Python**, **CPP/C++**, **Java**, **C#**, **VBA**
+Currently learning: **Java**, **HTML,CSS**, **bash**, **WSL configuration**, **docker**, **API routing and integration**
 
 /also loves to watch Hoshimachi Suisei :3
