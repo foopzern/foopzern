@@ -1,6 +1,6 @@
 # FoopZern
 
-I'm a **2nd Year Information Technology Student** aspiring to be a **Game Developer** im a guy who just loves to code and make fun stuff that I enjoy during my free time. I am currently focused on mastering git commands, Databases - XAMPP, MySQL, Bot/Mod Development - Discord,TModLoader. 
+I'm a **2nd Year Information Technology Student** aspiring to be a **Game Developer** im a guy who just loves to code and make fun stuff that I enjoy during my free time. I am currently focused on API routing, Version Control, Security which includes protocols, ip security architectures.
 
 ## Check out my works~~
 
@@ -8,7 +8,8 @@ I'm a **2nd Year Information Technology Student** aspiring to be a **Game Develo
   
 ## My latest projects~~
 
-**network administration system** - a system that has a dashboard and real time security against malicious attacks
+**network administration system** - a system that has a dashboard and real time security against malicious attacks deployed using render
+- uses react and python 
 
 ## Latest releases I've contributed to~~
 
