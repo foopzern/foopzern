@@ -1,6 +1,6 @@
 # FoopZern
-
-I'm a **2nd Year Information Technology Student** aspiring to be a **Game Developer** im a guy who just loves to code and make fun stuff that I enjoy during my free time. I am currently focused on API routing, Version Control, Security which includes protocols, ip security architectures.
+too lazy to update any of this ---
+I'm a **3rd Year Information Technology Student** aspiring to be a **Game Developer** im a guy who just loves to code and make fun stuff that I enjoy during my free time. I am currently focused on API routing, Version Control, Security which includes protocols, ip security architectures.
 
 ## Check out my works~~
 
